@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/valor1"
+        android:layout_width="67dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="196dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="num1"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toStartOf="@+id/valor2"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/valor2"
+        android:layout_width="67dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="96dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="num2"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botonSumar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="284dp"
+        android:onClick="sumar"
+        android:text="+"
+        app:layout_constraintEnd_toStartOf="@+id/botonRestar"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botonRestar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="284dp"
+        android:onClick="restar"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botonMultiplicar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="284dp"
+        android:onClick="multiplicar"
+        android:text="x"
+        app:layout_constraintStart_toEndOf="@+id/botonRestar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botonDividir"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="324dp"
+        android:layout_marginTop="284dp"
+        android:onClick="dividir"
+        android:text="/"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="89dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="296dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
